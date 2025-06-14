@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>HarshithSS- Personal Portfolio</title>
+<link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+  <header>
+    <div class="header-container">
+      <div class="logo" aria-label="Lucius Meshach logo">Harshith.</div>
+      <nav role="navigation" aria-label="Primary navigation">
+        <a href="#hero" class="active" tabindex="0">Home</a>
+        <a href="#services" tabindex="0">Services</a>
+        <a href="#resume" tabindex="0">Resume</a>
+        <a href="#portfolio" tabindex="0">Portfolio</a>
+        <a href="#contact" tabindex="0">Contact</a>
+      </nav>
+      <button class="mobile-menu-button" aria-label="Toggle menu" aria-expanded="false" aria-controls="mobile-menu"><span class="material-icons">menu</span></button>
+    </div>
+    <div id="mobile-menu" class="nav-mobile" role="menu" aria-hidden="true">
+      <a href="#hero" role="menuitem" tabindex="-1" class="active">Home</a>
+      <a href="#services" role="menuitem" tabindex="-1">Services</a>
+      <a href="#resume" role="menuitem" tabindex="-1">Resume</a>
+      <a href="#portfolio" role="menuitem" tabindex="-1">Portfolio</a>
+      <a href="#contact" role="menuitem" tabindex="-1">Contact</a>
+    </div>
+    <div class="breadcrumb" aria-live="polite" aria-atomic="true" aria-relevant="text">Home</div>
+  </header>
+
+  <main>
+    <!-- Hero Section -->
+    <section id="hero" class="hero" tabindex="-1">
+      <div class="hero-text">
+        <h1>Harshith S S</h1>
+        <p>I'm a <span class="highlight-green">Coder</span></p>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex, cum eos. Iure incidunt excepturi totam aperiam, deserunt quidem obcaecati consectetur volupt, recusandae quasi sequi.
+        </p>
+        <button class="btn-cv" aria-label="Download CV">Download CV</button>
+        <div class="social-icons" aria-label="Social media links">
+          <a href="https://github.com/Harshithss07" aria-label="GitHub" target="_blank" rel="noopener"><span class="material-icons"><ion-icon name="logo-github"></ion-icon></span></a>
+          <a href="https://www.linkedin.com/in/harshith-s-s-407309344/" aria-label="LinkedIn" target="_blank" rel="noopener"><span class="material-icons"><ion-icon name="logo-linkedin"></ion-icon></span></a>
+          <a href="#" aria-label="Instagram" target="_blank" rel="noopener"><span class="material-icons"><ion-icon name="logo-instagram"></ion-icon></span></a>
+          <a href="#" aria-label="YouTube" target="_blank" rel="noopener"><span class="material-icons"><ion-icon name="logo-youtube"></ion-icon></span></a>
+        </div>
+      </div>
+      <div class="hero-image-container" aria-label="Photo of Lucius Meshach">
+        <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/d640c154-741d-439c-9966-2d44630a5523.png" alt="Portrait photo of Lucius Meshach wearing sunglasses and black jacket, modern style" width="320" height="320" loading="lazy" />
+      </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" tabindex="-1">
+      <h2 class="section-title">My <span class="highlight-green">Services</span></h2>
+      <div class="services-grid" role="list" aria-label="List of services provided">
+        <article class="service-card" role="listitem" tabindex="0" aria-label="Web Development service">
+          <div class="service-icon" aria-hidden="true">code</div>
+          <h3 class="service-title">Web Development</h3>
+          <p class="service-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur rem, aperiam alias quis sequi architecto.</p>
+        </article>
+        <article class="service-card" role="listitem" tabindex="0" aria-label="UI UX Design service">
+          <div class="service-icon" aria-hidden="true">brush</div>
+          <h3 class="service-title">Artist</h3>
+          <p class="service-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur rem, aperiam alias quis sequi architecto.</p>
+        </article>
+        <article class="service-card" role="listitem" tabindex="0" aria-label="Graphic Design service">
+          <div class="service-icon" aria-hidden="true">palette</div>
+          <h3 class="service-title">Digital Art</h3>
+          <p class="service-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur rem, aperiam alias quis sequi architecto.</p>
+        </article>
+        <article class="service-card" role="listitem" tabindex="0" aria-label="SEO service">
+          <div class="service-icon" aria-hidden="true">trending_up</div>
+          <h3 class="service-title">SEO</h3>
+          <p class="service-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur rem, aperiam alias quis sequi architecto.</p>
+        </article>
+        <article class="service-card" role="listitem" tabindex="0" aria-label="Video Editing service">
+          <div class="service-icon" aria-hidden="true">videocam</div>
+          <h3 class="service-title">Video Editing</h3>
+          <p class="service-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur rem, aperiam alias quis sequi architecto.</p>
+        </article>
+        <article class="service-card" role="listitem" tabindex="0" aria-label="Photography service">
+          <div class="service-icon" aria-hidden="true">camera_alt</div>
+          <h3 class="service-title">Photography</h3>
+          <p class="service-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur rem, aperiam alias quis sequi architecto.</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- Resume Section -->
+    <section id="resume" tabindex="-1">
+      <h2 class="section-title">Why Hire Me?</h2>
+      <div class="resume" role="region" aria-label="Resume section">
+        <nav class="resume-menu" role="tablist" aria-orientation="vertical">
+          <button role="tab" aria-selected="true" aria-controls="experience-panel" id="experience-tab" class="active">Experience</button>
+          <button role="tab" aria-selected="false" aria-controls="education-panel" id="education-tab">Education</button>
+          <button role="tab" aria-selected="false" aria-controls="skills-panel" id="skills-tab">Skills</button>
+          <button role="tab" aria-selected="false" aria-controls="about-panel" id="about-tab">About Me</button>
+        </nav>
+        <article class="resume-content" tabindex="0">
+          <!-- Experience Panel -->
+          <section role="tabpanel" id="experience-panel" aria-labelledby="experience-tab" class="panel active fade-in">
+            <h3>My <span class="highlight-green">Experience</span></h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius possimus aliquam commodi sed excepturi incidunt odio ratione voluptatibus, officiis sit.</p>
+            <div class="experience-grid">
+              <div class="experience-item" tabindex="0">
+                <div class="time">2025</div>
+                <div class="title">Frontend Developer</div>
+                <div class="company">SnaxTech</div>
+                <p>This 1-month online internship is a great opportunity to apply my web development skills, work on real-world projects, and grow as a developer. I'm grateful to StaxTech for this opportunity.</p>
+              </div>
+              <div class="experience-item" tabindex="0">
+                <div class="time">2025</div>
+                <div class="title">Python programming</div>
+                <div class="company">Codsoft</div>
+                <p>This 1-month online internship is a great opportunity to apply my python programming skills, work on real-world projects, and grow as a developer. I'm grateful to Codsoft for this opportunity.</p>
+              </div>
+              <div class="experience-item" tabindex="0">
+                <div class="time">2024</div>
+                <div class="title">Web Developer</div>
+                <div class="company">Codsoft</div>
+                <p>This 1-month online internship is a great opportunity to apply my web development skills, work on real-world projects, and grow as a developer. I'm grateful to Codsoft for this opportunity.</p>
+              </div>
+              <div class="experience-item" tabindex="0">
+                <div class="time">2010 - Presesnt</div>
+                <div class="title">Artist</div>
+                <div class="company">😆</div>
+                <p>I am a professional artist. I seek proficiency in sketching, watercolours, acrylic colours, shading...</p>
+              </div>
+            </div>
+          </section>
+
+          <!-- Education Panel -->
+          <section role="tabpanel" id="education-panel" aria-labelledby="education-tab" class="panel fade-in" hidden>
+            <h3>My <span class="highlight-green">Education</span></h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius possimus aliquam commodi sed excepturi incidunt odio ratione voluptatibus, officiis sit.</p>
+            <div class="experience-grid">
+            <div class="experience-item" tabindex="0">
+                <div class="time">2023 - 2027</div>
+                <div class="title">University</div>
+                <div class="company">Srinivas University</div>
+                <p>currently i am pursuing my under-graduate education @ Srinivas University, Mukka</p>
+              </div>
+              <div class="experience-item" tabindex="0">
+                <div class="time">2021 - 2023</div>
+                <div class="title">Pre University</div>
+                <div class="company">Jnanasudha P U College</div>
+                <p>I completed my pre-University education @ Jnanasudha PU college, Udupi</p>
+              </div>
+              <div class="experience-item" tabindex="0">
+                <div class="time">2011 - 2021</div>
+                <div class="title"> Schooling</div>
+                <div class="company">Mount Rosary English school</div>
+                <p>Completed my Primary, Higher primary and Highschool @ Mount Rosary English School, santhekatte-kallianpur, Udupi</p>
+              </div>
+            </div>
+          </section>
+
+          <!-- Skills Panel -->
+          <section role="tabpanel" id="skills-panel" aria-labelledby="skills-tab" class="panel fade-in" hidden>
+            <h3>My <span class="highlight-green">Skills</span></h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius possimus aliquam commodi sed excepturi incidunt odio ratione voluptatibus, officiis sit.</p>
+            <div class="skills-grid" role="list" aria-label="List of skills">
+              <div class="skill-item" role="listitem" tabindex="0" title="HTML5">
+                <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/8473ea57-6e53-46b1-ae85-64b89a30288b.png" alt="HTML5 Logo" />
+              </div>
+              <div class="skill-item" role="listitem" tabindex="0" title="CSS3">
+                <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/e40c55d8-4452-4062-9f90-03c4d0b83a21.png" alt="CSS3 Logo" />
+              </div>
+              <div class="skill-item" role="listitem" tabindex="0" title="JavaScript">
+                <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/05b5d6d4-2f8f-4b84-8b09-0f318223e59b.png" alt="JavaScript Logo" />
+              </div>
+              <div class="skill-item" role="listitem" tabindex="0" title="React">
+                <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/578d0062-0d1d-477f-ac6b-ba974f870758.png" alt="React Logo" />
+              </div>
+              <div class="skill-item" role="listitem" tabindex="0" title="Vue">
+                <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/9b145fff-4f9e-4982-b719-9bb8f76a0dfd.png" alt="Vue.js Logo" />
+              </div>
+              <div class="skill-item" role="listitem" tabindex="0" title="Tailwind CSS">
+                <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/017e5d47-5b02-4036-88c7-31e1f3b6e692.png" alt="Tailwind CSS Logo" />
+              </div>
+              <div class="skill-item" role="listitem" tabindex="0" title="Node.js">
+                <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/caa6310b-1491-4734-bb0c-155305b6e5ac.png" alt="Node.js Logo" />
+              </div>
+              <div class="skill-item" role="listitem" tabindex="0" title="MongoDB">
+                <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/cc7fba02-7f85-4412-af42-f6f76636cde1.png" alt="MongoDB Logo" />
+              </div>
+            </div>
+          </section>
+
+          <!-- About Me Panel -->
+          <section role="tabpanel" id="about-panel" aria-labelledby="about-tab" class="panel fade-in" hidden>
+            <h3>About <span class="highlight-green">Me</span></h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius possimus aliquam commodi sed excepturi incidunt odio ratione voluptatibus, officiis sit.</p>
+            <div class="about-grid">
+              <div class="about-item"><strong>Name:</strong> Harshith.S.S</div>
+              <div class="about-item"><strong>Gender:</strong> Male</div>
+              <div class="about-item"><strong>Age:</strong> 20 Years Old</div>
+              <div class="about-item"><strong>Status:</strong> Married</div>
+              <div class="about-item"><strong>City:</strong> Udupi</div>
+              <div class="about-item"><strong>Nationality:</strong> Indian</div>
+              <div class="about-item"><strong>Experience:</strong> 2+ Years</div>
+              <div class="about-item"><strong>Full Time:</strong> Available</div>
+              
+              <div class="about-item"><strong>Phone:</strong> (+91) 9901220942</div>
+              <div class="about-item"><strong>Email:</strong> harshithss272@gmail.com</div>
+              <div class="about-item"><strong>Languages:</strong> English, Hindi, Kannada</div>
+            </div>
+          </section>
+        </article>
+      </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section id="portfolio" tabindex="-1">
+      <h2 class="section-title">Latest <span class="highlight-green">Project</span></h2>
+      <div class="portfolio" aria-label="Portfolio projects">
+        <div class="portfolio-text">
+          <div style="color:#6b7280; font-size: 3rem; font-weight: 900; opacity: 0.1; user-select:none;">03</div>
+          <h3>Frontend Project</h3>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat tempora vel sit maiores vitae atque accusantium iste voluptate.</p>
+          <a href="#" class="highlight-green" aria-label="React.js and Tailwind CSS technologies used">React.js, Tailwind CSS</a>
+          <div class="portfolio-buttons" role="group" aria-label="Project navigation">
+            <button aria-label="Previous project"><span class="material-icons">arrow_back</span></button>
+            <button aria-label="Next project"><span class="material-icons">arrow_forward</span></button>
+          </div>
+        </div>
+        <div class="portfolio-image-container">
+          <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/d8dd1356-26a7-459d-b025-710e22e01b09.png" alt="Screenshot preview of frontend project with coffee and smoothie images on screen" width="600" height="400" loading="lazy" />
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" tabindex="-1">
+      <div class="contact-section" role="region" aria-label="Contact me section">
+        <div class="contact-left">
+          <h2>Let's Work Together</h2>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur neque vero odio beatae perspiciatis iste laboriosam nihil veritatis adipisci explicabo.</p>
+          <div class="contact-info">
+            <div class="contact-info-item">
+              <span class="material-icons contact-icon" aria-hidden="true">phone</span>
+              <span> (+91) 9901220942</span>
+            </div>
+            <div class="contact-info-item">
+              <span class="material-icons contact-icon" aria-hidden="true">email</span>
+              <span> harshithss272@gmail.com</span>
+            </div>
+            <div class="contact-info-item">
+              <span class="material-icons contact-icon" aria-hidden="true">location_on</span>
+              <span> Udupi, Karnataka</span>
+            </div>
+          </div>
+        </div>
+        <form aria-label="Contact form" novalidate>
+          <input type="text" name="name" id="name" placeholder="Full Name" required aria-required="true" />
+          <input type="email" name="email" id="email" placeholder="Email Address" required aria-required="true" />
+          <input type="tel" name="phone" id="phone" placeholder="Phone Number" />
+          <input type="text" name="subject" id="subject" placeholder="Email Subject" />
+          <textarea name="message" id="message" placeholder="Your Message" rows="5" required aria-required="true"></textarea>
+          <button type="submit" class="send-btn" aria-label="Send message">Send Message</button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    &copy; 2025 Harshith S S. All rights reserved.
+  </footer>
+
+  <script src="script.js"></script>
+  <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</body>
+</html>
+

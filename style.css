@@ -1,0 +1,609 @@
+
+  /* Import Google Fonts */
+  @import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;900&display=swap");
+  @import url('https://fonts.googleapis.com/icon?family=Material+Icons');
+
+  /* Reset and base styles */
+  *, *::before, *::after {
+    box-sizing: border-box;
+  }
+  body {
+    margin: 0;
+    font-family: 'Inter', sans-serif;
+    background-color: #121821;
+    color: #e0e0e0;
+    line-height: 1.6;
+    min-height: 100vh;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  a {
+    color: inherit;
+    text-decoration: none;
+  }
+  ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  button {
+    font-family: inherit;
+  }
+
+  /* Scrollbar */
+  ::-webkit-scrollbar {
+    width: 8px;
+  }
+  ::-webkit-scrollbar-track {
+    background: #1f2937;
+  }
+  ::-webkit-scrollbar-thumb {
+    background: #22c55e;
+    border-radius: 4px;
+  }
+
+  /* Container */
+  .container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
+  /* Colors */
+  :root {
+    --green: #6afff8;
+    --green-dark: #71ffa5;
+    --bg-dark: #121821;
+    --bg-dark-secondary: #1f2937;
+    --text-light: #e0e0e0;
+    --text-muted: #9ca3af;
+    --card-bg: #1e293b;
+    --border-radius: 12px;
+    --transition: 0.3s ease;
+  }
+
+  /* HEADER */
+  header {
+    background-color: var(--bg-dark);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    border-bottom: 1px solid #222f3d;
+  }
+  .header-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+    
+  }
+  .logo {
+    font-weight: 900;
+    font-size: 1.5rem;
+    color: rgb(124, 255, 229);
+    letter-spacing: 1px;
+    cursor: default;
+    
+  }
+  nav {
+    display: flex;
+    align-items: center;
+    gap: 1.8rem;
+  }
+  nav a {
+    color: var(--text-light);
+    font-weight: 600;
+    font-size: 1rem;
+    position: relative;
+    transition: color var(--transition);
+  }
+  nav a.active,
+  nav a:hover {
+    color: var(--green);
+  }
+  nav a.active::after,
+  nav a:hover::after {
+    content: "";
+    position: absolute;
+    bottom: -6px;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background: var(--green);
+    border-radius: 2px;
+  }
+
+  /* Mobile Menu */
+  .mobile-menu-button {
+    display: none;
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: var(--text-light);
+    font-size: 2rem;
+    user-select: none;
+  }
+
+  /* Mobile nav */
+  .nav-mobile {
+    position: fixed;
+    inset: 0;
+    background: rgba(18, 24, 33, 0.95);
+    display: none;
+    flex-direction: column;
+    padding-top: 5rem;
+    align-items: center;
+    gap: 2rem;
+    z-index: 1200;
+  }
+  .nav-mobile.show {
+    display: flex;
+  }
+  .nav-mobile a {
+    color: var(--text-light);
+    font-size: 1.4rem;
+    font-weight: 700;
+  }
+  .nav-mobile a.active {
+    color: var(--green);
+  }
+
+  /* Breadcrumb for mobile */
+  .breadcrumb {
+    display: none;
+    font-size: 1rem;
+    color: var(--green);
+    margin-left: 1rem;
+  }
+
+  /* MAIN SECTIONS */
+  main {
+    max-width: 1200px;
+    margin: 2rem auto 5rem auto;
+    padding: 0 1rem;
+  }
+  section {
+    margin-bottom: 4rem;
+  }
+
+  /* HERO SECTION */
+  .hero {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 3rem;
+    align-items: center;
+  }
+  .hero-text h1 {
+    font-weight: 900;
+    font-size: 2.8rem;
+    margin-bottom: 0.5rem;
+    color: white;
+  }
+  .hero-text p {
+    color: var(--text-muted);
+    margin-bottom: 1.5rem;
+    max-width: 480px;
+  }
+  .highlight-green {
+    color: var(--green);
+    font-weight: 700;
+  }
+  .btn-cv {
+    background-color: var(--green);
+    border: none;
+    color: #111;
+    padding: 0.75rem 2rem;
+    font-weight: 700;
+    font-size: 1rem;
+    cursor: pointer;
+    border-radius: var(--border-radius);
+    transition: background-color var(--transition);
+  }
+  .btn-cv:hover {
+    background-color: var(--green-dark);
+  }
+  .social-icons {
+    margin-top: 1rem;
+    display: flex;
+    gap: 1rem;
+  }
+  .social-icons a {
+    border: 2px solid var(--green);
+    border-radius: 50%;
+    width: 38px;
+    height: 38px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--green);
+    font-size: 1.3rem;
+    transition: background-color var(--transition), color var(--transition);
+  }
+  .social-icons a:hover {
+    background-color: var(--green);
+    color: #000;
+  }
+  /* Hero image */
+  .hero-image-container {
+    position: relative;
+    width: 320px;
+    height: 320px;
+    margin: 0 auto;
+  }
+  .hero-image-container img {
+    border-radius: 50%;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border: 4px solid var(--green);
+  }
+  .hero-image-container::before {
+    content: "";
+    position: absolute;
+    inset: -10px;
+    border: 2px solid transparent;
+    border-radius: 50%;
+    border-image: linear-gradient(90deg, transparent, var(--green), transparent) 1;
+    animation: rotate 5s linear infinite;
+  }
+  @keyframes rotate {
+    0% {transform: rotate(0deg);}
+    100% {transform: rotate(360deg);}
+  }
+
+  /* SERVICES SECTION */
+  .section-title {
+    font-size: 2.5rem;
+    font-weight: 900;
+    margin-bottom: 2rem;
+    color: white;
+  }
+  .services-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+    gap: 1.8rem;
+  }
+  .service-card {
+    background: var(--card-bg);
+    border-radius: var(--border-radius);
+    padding: 1.8rem 2rem;
+    box-shadow: 0 0 12px rgba(0,0,0,0.3);
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    cursor: default;
+    transition: box-shadow var(--transition);
+  }
+  .service-card:hover {
+    box-shadow: 0 0 20px var(--green);
+  }
+  .service-icon {
+    font-family: 'Material Icons';
+    font-size: 2rem;
+    color: var(--green);
+    display: flex;
+    justify-content: flex-end;
+  }
+  .service-title {
+    font-weight: 700;
+    font-size: 1.25rem;
+    color: white;
+  }
+  .service-desc {
+    font-size: 0.95rem;
+    color: var(--text-muted);
+    flex-grow: 1;
+  }
+
+  /* RESUME SECTION */
+  .resume {
+    display: grid;
+    grid-template-columns: 220px 1fr;
+    gap: 2rem;
+    color: white;
+  }
+  .resume-menu {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+  .resume-menu button {
+    background: var(--card-bg);
+    border: none;
+    color: var(--text-light);
+    font-weight: 600;
+    padding: 1rem 1.25rem;
+    border-radius: var(--border-radius);
+    cursor: pointer;
+    transition: all var(--transition);
+    text-align: left;
+    font-size: 1rem;
+  }
+  .resume-menu button.active,
+  .resume-menu button:hover {
+    color: var(--green);
+    border: 2px solid var(--green);
+    background: transparent;
+  }
+  .resume-content h3 {
+    font-weight: 700;
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+  }
+  .resume-content p {
+    margin-bottom: 1rem;
+    color: var(--text-muted);
+  }
+  /* Experience cards */
+  .experience-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(280px,1fr));
+    gap: 1.5rem;
+  }
+  .experience-item {
+    background: var(--card-bg);
+    border-radius: var(--border-radius);
+    padding: 1rem;
+  }
+  .experience-item .time {
+    color: var(--green);
+    font-weight: 700;
+    margin-bottom: 0.3rem;
+  }
+  .experience-item .title {
+    font-weight: 700;
+    color: white;
+    margin-bottom: 0.15rem;
+  }
+  .experience-item .company {
+    color: var(--text-muted);
+    font-style: italic;
+    font-size: 0.9rem;
+    margin-bottom: 0.5rem;
+  }
+  /* Skills grid */
+  .skills-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(80px,1fr));
+    gap: 1.5rem;
+  }
+  .skill-item {
+    background: var(--card-bg);
+    border-radius: var(--border-radius);
+    padding: 1.25rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .skill-item img,
+  .skill-item svg {
+    width: 40px;
+    height: 40px;
+    object-fit: contain;
+  }
+  /* About me details grid */
+  .about-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(120px, 1fr));
+    gap: 1.5rem;
+    color: var(--text-muted);
+  }
+  .about-item strong {
+    color: var(--green);
+    display: inline-block;
+    width: 90px;
+  }
+  /* Active section animation */
+  .fade-in {
+    animation: fadeIn 0.35s ease forwards;
+    opacity: 0;
+  }
+  @keyframes fadeIn {
+    to {opacity: 1;}
+  }
+
+  /* PORTFOLIO SECTION */
+  .portfolio {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    align-items: center;
+  }
+  .portfolio-text {
+    color: white;
+  }
+  .portfolio-text h2 {
+    font-weight: 900;
+    font-size: 2.5rem;
+    margin-bottom: 0.3rem;
+  }
+  .portfolio-text p {
+    color: var(--text-muted);
+    margin-bottom: 1rem;
+    max-width: 380px;
+  }
+  .portfolio-tech {
+    color: var(--green);
+    font-weight: 600;
+    font-size: 0.95rem;
+    margin-bottom: 1.5rem;
+  }
+  .portfolio-buttons {
+    display: flex;
+    gap: 0.8rem;
+    margin-bottom: 1rem;
+  }
+  .portfolio-buttons button {
+    background: var(--bg-dark-secondary);
+    border: none;
+    color: var(--text-muted);
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: background-color var(--transition);
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .portfolio-buttons button:hover {
+    background-color: var(--green);
+    color: #000;
+  }
+  .portfolio-image-container {
+    border-radius: var(--border-radius);
+    overflow: hidden;
+    box-shadow: 0 0 20px rgba(0,0,0,0.4);
+  }
+  .portfolio-image-container img {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+
+  /* CONTACT SECTION */
+  .contact-section {
+    display: grid;
+    grid-template-columns: 1fr 1.5fr;
+    gap: 2rem;
+    color: white;
+  }
+  .contact-left h2 {
+    font-weight: 900;
+    font-size: 2.1rem;
+    margin-bottom: 0.75rem;
+  }
+  .contact-left p {
+    max-width: 420px;
+    color: var(--text-muted);
+    margin-bottom: 2rem;
+  }
+  .contact-info {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+  .contact-info-item {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    font-weight: 600;
+    color: var(--green);
+    font-size: 1rem;
+  }
+  .material-icons.contact-icon {
+    font-size: 22px;
+    color: var(--green);
+  }
+  form {
+    background: var(--card-bg);
+    border-radius: var(--border-radius);
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+  input, textarea {
+    background: var(--bg-dark-secondary);
+    border: none;
+    border-radius: 8px;
+    padding: 0.8rem 1rem;
+    color: var(--text-light);
+    font-size: 1rem;
+    resize: none;
+  }
+  input::placeholder, textarea::placeholder {
+    color: var(--text-muted);
+  }
+  button.send-btn {
+    background-color: var(--green);
+    border: none;
+    padding: 0.8rem 1.5rem;
+    color: #111;
+    font-weight: 700;
+    font-size: 1rem;
+    border-radius: var(--border-radius);
+    cursor: pointer;
+    align-self: flex-start;
+    transition: background-color var(--transition);
+  }
+  button.send-btn:hover {
+    background-color: var(--green-dark);
+  }
+
+  /* FOOTER */
+  footer {
+    background-color: var(--bg-dark);
+    text-align: center;
+    padding: 1rem 2rem;
+    color: var(--text-muted);
+    font-size: 0.9rem;
+    user-select: none;
+  }
+
+  /* RESPONSIVE */
+  @media (max-width: 767px) {
+    .breadcrumb {
+      display: inline-block;
+    }
+    nav {
+      display: none;
+    }
+    .mobile-menu-button {
+      display: inline-block;
+    }
+    .hero {
+      grid-template-columns: 1fr;
+      text-align: center;
+    }
+    .hero-text {
+      margin-bottom: 2rem;
+    }
+    .hero-image-container {
+      width: 220px;
+      height: 220px;
+      margin: 0 auto;
+    }
+    main {
+      margin: 1.5rem auto 3rem auto;
+    }
+    .services-grid {
+      grid-template-columns: 1fr;
+    }
+    .resume {
+      display: block;
+    }
+    .resume-menu {
+      flex-direction: row;
+      overflow-x: auto;
+      -webkit-overflow-scrolling: touch;
+      gap: 0.8rem;
+      padding-bottom: 0.5rem;
+      margin-bottom: 1.5rem;
+      border-bottom: 2px solid var(--bg-dark-secondary);
+    }
+    .resume-menu button {
+      flex: 0 0 auto;
+      font-size: 0.9rem;
+      padding: 0.75rem 1rem;
+      border-radius: 8px;
+      border: 2px solid transparent;
+    }
+    .resume-content {
+      color: white;
+    }
+    .portfolio {
+      grid-template-columns: 1fr;
+    }
+    .contact-section {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  @media (min-width: 1440px) {
+    main {
+      max-width: 1400px;
+    }
+  }
