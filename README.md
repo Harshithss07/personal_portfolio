@@ -29,6 +29,6 @@ Welcome to my personal portfolio website built using **HTML, CSS, and JavaScript
 
 ### 🚀 See It in Action
 
-Check out the live version 👉 [My Portfolio](https://your-username.github.io/your-portfolio-repo)
+Check out the live version 👉 [My Portfolio](https://harshithss07.github.io/personal_portfolio/)
 
 
