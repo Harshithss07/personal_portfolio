@@ -1,6 +1,7 @@
 # 💼 Harshith S S - Personal Portfolio
 
-![Screenshot](assets/portfolio-screenshot.png)
+<img width="1547" height="681" alt="portfolio-screenshot png" src="https://github.com/user-attachments/assets/5db082ea-ffa4-4cbe-a72e-4f1b067b7438" />
+
 
 Welcome to my personal portfolio website built using **HTML, CSS, and JavaScript** . This portfolio showcases my skills, projects, resume, and contact information in a clean, modern, and responsive design.
 
@@ -26,17 +27,8 @@ Welcome to my personal portfolio website built using **HTML, CSS, and JavaScript
 
 ---
 
-### 📷 Preview
+### 🚀 See It in Action
 
-<p align="center">
-  <img src="portfolio-screenshot.png" alt="Portfolio Screenshot" width="800"/>
-</p>
+Check out the live version 👉 [My Portfolio](https://your-username.github.io/your-portfolio-repo)
 
----
 
-### 📎 How to Use
-
-1. **Clone the Repository:**
-   ```bash
-   git clone https://github.com/Harshithss07/personal_portfolio.git
-   cd personal_portfolio
